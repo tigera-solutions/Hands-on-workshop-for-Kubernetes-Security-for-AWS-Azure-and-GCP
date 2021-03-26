@@ -22,6 +22,7 @@
 
 ## Service Graph (LAB)
 
-## Ingress network secuity policy
+## Ingress network secuity policy (LAB)
+
 
 
