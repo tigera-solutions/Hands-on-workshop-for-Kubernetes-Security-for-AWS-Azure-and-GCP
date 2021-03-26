@@ -2,11 +2,12 @@
 ## Workshop agenda
 1. Introduction
 1. Setting up the workshop environment
-1. Service Graph (lab1)
-1. Ingress network secuity policy (lab2)
-1. Egress network secuity policy (lab3)
-1. DNS policy (lab4)
-1. Explore metrics and logging (lab5)
-1. Summary
+2. Deploying a demo application (lab1)
+3. Service Graph (lab2)
+4. Ingress network secuity policy (lab3)
+5. Egress network secuity policy (lab4)
+6. DNS policy (lab5)
+7. Explore metrics and logging (lab6)
+8. Summary
 
 
