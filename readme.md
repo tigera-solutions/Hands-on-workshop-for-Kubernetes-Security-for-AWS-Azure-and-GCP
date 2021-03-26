@@ -1,21 +1,21 @@
 # Hands-on workshop for Kubernetes Security for AWS, Azure and GCP
 ## Workshop agenda
 1. Introduction
-1. Setting up the workshop environment (lab0)
-2. Deploying a demo application (lab1)
-3. Service Graph (lab2)
-4. Ingress network secuity policy (lab3)
-5. Egress network secuity policy (lab4)
-6. DNS policy (lab5) (Stage, Preview, Enforce)
+1. Setting up the workshop environment (Lab0)
+2. Deploying a demo application (Lab1)
+3. Dynamic Service Graph (Lab2)
+4. Ingress security policy (Lab3)
+5. Egress security policy (Lab4)
+6. DNS policy (Lab5) (Stage, Preview, Enforce)
 7. Policy wizard ... 
 8. Explore metrics and logging (lab6)
 9. Summary
 
 
 ## Introduction
-* company overview
-* product ovreview
-* calicocloud
+* Company Overview
+* Product Ovreview
+* Calico Cloud
 
 ## Setting up the workshop environment 
 
