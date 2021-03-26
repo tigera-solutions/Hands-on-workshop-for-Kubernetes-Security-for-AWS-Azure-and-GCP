@@ -6,9 +6,10 @@
 3. Service Graph (lab2)
 4. Ingress network secuity policy (lab3)
 5. Egress network secuity policy (lab4)
-6. DNS policy (lab5)
-7. Explore metrics and logging (lab6)
-8. Summary
+6. DNS policy (lab5) (Stage, Preview, Enforce)
+7. Policy wizard ... 
+8. Explore metrics and logging (lab6)
+9. Summary
 
 
 ## Introduction
