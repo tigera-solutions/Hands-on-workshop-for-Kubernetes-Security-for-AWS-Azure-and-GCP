@@ -12,16 +12,6 @@ kubectl get no
 kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
 
-### 3. Add a worker node (optionally)
-```
-minikube node add 
-```
-
-### 4. Verify your cluster is ready
-```
-kubectl get no  
-````
-
 ## 2. Connect your cluster
 ```
  curl https://installer.calicocloud.io/79bbbkkkg_radarhackcom-saay-management_install.sh | bash
