@@ -26,7 +26,7 @@ kubectl get no
 ```
  curl https://installer.calicocloud.io/79bbbkkkg_radarhackcom-saay-management_install.sh | bash
 ```
-## 3. Setup a deno application
+## 3. Setup a dmno application
 ```
 kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 ```
