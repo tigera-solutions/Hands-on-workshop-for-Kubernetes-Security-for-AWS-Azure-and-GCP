@@ -5,7 +5,7 @@ metadata:
   namespace: storefront
 spec:
   tier: storefront
-  order: 1
+  order: 10
   selector: all()
   serviceAccountSelector: ''
   egress:
