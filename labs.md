@@ -31,3 +31,9 @@ kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 
 ### 2. Policy recommendation 
 
+### 3. Apply a tiered network policy
+```
+kubectl apply -f ./netpol/
+```
+
+
