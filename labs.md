@@ -35,5 +35,8 @@ kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 ```
 kubectl apply -f ./netpol/
 ```
-
+### 4, Deploy a rogue pod
+```
+kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
+```
 
