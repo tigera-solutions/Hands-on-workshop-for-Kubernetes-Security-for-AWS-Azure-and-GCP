@@ -30,7 +30,8 @@ kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 ```
 ### 4. Clone the repository
 ```
-git clone ....
+git clone https://github.com/tigera-solutions/Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP.git
+cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ```
 ## 3. Dashboard quickstart
 
