@@ -10,19 +10,19 @@ spec:
   serviceAccountSelector: ''
   egress:
     - action: Allow
-      protocol: TCP
-      source: {}
-      destination:
-        selector: k8s-app == "kube-dns"
-        namespaceSelector: global()
-        ports:
-          - '53'
-    - action: Allow
       protocol: UDP
       source: {}
       destination:
-        selector: k8s-app == "kube-dns"
-        namespaceSelector: global()
+        nets:
+          - 0.0.0.0/0
+        ports:
+          - '53'
+    - action: Allow
+      protocol: TCP
+      source: {}
+      destination:
+        nets:
+          - 0.0.0.0/0
         ports:
           - '53'
   types:
