@@ -41,7 +41,7 @@ cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 
 ### 3. Apply a tiered network policy
 ```
-kubectl apply -f ./netpol/
+kubectl apply -f ./networkpolicy/
 ```
 ### 4. Deploy a rogue pod
 ```
