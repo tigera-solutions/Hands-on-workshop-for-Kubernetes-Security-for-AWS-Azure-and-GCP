@@ -5,7 +5,7 @@ metadata:
   namespace: storefront
 spec:
   tier: storefront
-  order: 20
+  order: 30
   selector: fw-zone == "trusted"
   serviceAccountSelector: ''
   ingress:
