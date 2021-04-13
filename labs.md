@@ -47,4 +47,12 @@ kubectl apply -f ./networkpolicy/
 ```
 kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 ```
+### 5. Verify the impact of the pod
+
+### 6. Create a quarantine rule
+
+### 7. Apply the qurantine label
+```
+kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
+```
 
