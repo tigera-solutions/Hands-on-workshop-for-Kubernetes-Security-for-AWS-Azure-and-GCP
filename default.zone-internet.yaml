@@ -1,0 +1,28 @@
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: storefront.zone-internet
+  namespace: storefront
+spec:
+  tier: storefront
+  order: 5
+  selector: fw-zone == "internet"
+  serviceAccountSelector: ''
+  ingress:
+    - action: Allow
+      source:
+        selector: fw-zone == "internet"
+      destination: {}
+  egress:
+    - action: Allow
+      source: {}
+      destination:
+        selector: fw-zone == "internet"
+    - action: Allow
+      source: {}
+      destination:
+        selector: fw-zone == "dmz"
+  types:
+    - Ingress
+    - Egress
+

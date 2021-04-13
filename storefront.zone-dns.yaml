@@ -1,0 +1,27 @@
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: storefront.zone-kubernetes-dns
+  namespace: storefront
+spec:
+  tier: storefront
+  order: 1
+  selector: all()
+  serviceAccountSelector: ''
+  egress:
+    - action: Allow
+      protocol: TCP
+      source: {}
+      destination:
+        selector: k8s-app == "kube-dns"
+        ports:
+          - '53'
+    - action: Allow
+      protocol: UDP
+      source: {}
+      destination:
+        selector: k8s-app == "kube-dns"
+        ports:
+          - '53'
+  types:
+    - Egress
