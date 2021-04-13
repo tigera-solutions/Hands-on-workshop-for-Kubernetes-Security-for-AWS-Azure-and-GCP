@@ -28,6 +28,10 @@ kubectl patch felixconfiguration.p default -p '{"spec":{"flowLogsFileAggregation
 ```
 kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 ```
+### 4. Clone the repository
+```
+git clone ....
+```
 ## 3. Dashboard quickstart
 
 ### 1. Service graph
