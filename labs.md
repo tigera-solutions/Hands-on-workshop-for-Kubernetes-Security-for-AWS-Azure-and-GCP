@@ -11,7 +11,7 @@ minikube start --network-plugin=cni --cni=calico --memory=4096
 kubectl get no
 kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
-## 2.Connecting your cluster to CalicoCloud
+## 2. Connecting your cluster to CalicoCloud
 ### 1. Connect your cluster
 ```
  curl https://installer.calicocloud.io/xxxxxx_yyyyyyy-saay-management_install.sh | bash
