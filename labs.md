@@ -9,7 +9,7 @@ cd tigeraworkshop
 minikube start --network-plugin=cni --cni=calico --memory=4096
 ```
 
-#### 2. Verify calico is working
+#### 2. Verify minikube and calico is working
 ```
 kubectl get no
 kubectl get pods -l k8s-app=calico-node -n kube-system
