@@ -5,7 +5,7 @@ metadata:
   namespace: storefront
 spec:
   tier: storefront
-  order: 10
+  order: 20
   selector: fw-zone == "internet"
   serviceAccountSelector: ''
   ingress:
