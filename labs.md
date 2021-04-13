@@ -1,5 +1,5 @@
 ## 1. Getting a workshop environment (pre-workshop)
-#### 1. Setup minikube
+#### 1. Setup minikube (example for Mac)
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
 sudo install minikube-darwin-amd64 /usr/local/bin/minikube
