@@ -53,7 +53,7 @@ kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 * insert a new tier called `security` before the storefront tier
 * create a new policy called `quarantine`
 * set the scope to `global`
-* Set the appy to `qurantine=true` (you need to create the key and value)
+* Set the Apply to `qurantine=true` (you need to create the key and value)
 * create  an ingress rule Action Log, Match All Endpoints
 * create  an ingress rule Action Deny, Match All Endpoints
 * create  an egress rule Action Log, Match All Endpoints
