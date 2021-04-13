@@ -14,6 +14,7 @@ spec:
       source: {}
       destination:
         selector: k8s-app == "kube-dns"
+        namespaceSelector: global()
         ports:
           - '53'
     - action: Allow
@@ -21,6 +22,7 @@ spec:
       source: {}
       destination:
         selector: k8s-app == "kube-dns"
+        namespaceSelector: global()
         ports:
           - '53'
   types:
