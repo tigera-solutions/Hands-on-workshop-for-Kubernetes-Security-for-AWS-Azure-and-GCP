@@ -37,19 +37,21 @@ cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 
 #### 1. Service graph
 
-#### 2. Policy recommendation 
+## 4. Security polices 
 
-#### 3. Apply a tiered network policy
+#### 1. Policy recommendation 
+
+#### 2. Apply a tiered network policy
 ```
 kubectl apply -f ./networkpolicy/
 ```
-#### 4. Deploy a rogue pod
+#### 3. Deploy a rogue pod
 ```
 kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 ```
-#### 5. Verify the impact of the pod
+#### 4. Verify the impact of the pod
 
-#### 6. Create a quarantine rule
+#### 5. Create a quarantine rule
 * insert a new tier called `security` before the storefront tier
 * create a new policy called `quarantine`
 * set the scope to `global`
@@ -59,10 +61,18 @@ kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 * create  an egress rule Action Log, Match All Endpoints
 * create  an egress rule Action Deny, Match All Endpoints
 
-Stage the policy ...
-
-#### 7. Apply the qurantine label
+#### 6. Apply the quarantine label
 ```
 kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
 ```
-#### 8. Enforce the quarantine rule
+## DNS policies
+#### Create a DNS policy to limit access to *.tigera.io
+*  insert a new rule after the DNS rule called `api-access`
+*  Set to scope Namespace `storefront`
+*  Set apply to `fw-zone=internet`
+*  Create an Egress rule 
+      Allow is Protocol is TCP
+      port 80 and 443 
+      egress domain t `*.tigera.io`
+    
+* 
