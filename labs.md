@@ -43,6 +43,7 @@ cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ## 4. Security polices 
 
 #### 1. Policy recommendation 
+Create a policy by using the Policy Recommendation option in CalicoCloud. From the Policy Dashboard, select the Policy Recommendation icon. Select the namespace `storefront` and pod `frontend-...` and click recommend. To verify the impact of the policy, click `stage`. Use the Service Graph or Flow visualizer to see the impact of the rule. When you are confident that this rule is correct, we can `enforce` the rule. 
 
 #### 2. Apply a tiered network policy
 ```
