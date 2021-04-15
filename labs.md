@@ -36,6 +36,9 @@ cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ## 3. Dashboard quickstart
 
 #### 1. Service graph
+#### 2. Policy Dashboard
+#### 3. Flow visualizer
+#### 4. Kibana logs
 
 ## 4. Security polices 
 
