@@ -71,7 +71,7 @@ kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
 *  Set the scope to Namespace `storefront`
 *  Set Apply to `fw-zone=internet`
 *  Create an Egress rule 
-      Allow is Protocol is `TCP`
-      port `80` and `443` 
-      egress domain t `*.tigera.io`
+      * Allow is Protocol is `TCP`
+      * port `80` and `443` 
+      * egress domain `*.tigera.io`
     
