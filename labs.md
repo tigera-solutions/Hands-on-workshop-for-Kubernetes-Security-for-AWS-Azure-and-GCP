@@ -67,12 +67,11 @@ kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
 ```
 ## DNS policies
 #### Create a DNS policy to limit access to *.tigera.io
-*  insert a new rule after the DNS rule called `api-access`
-*  Set to scope Namespace `storefront`
-*  Set apply to `fw-zone=internet`
+*  insert a new rule after `zone-kubernetes-dns` called `api-access`
+*  Set the scope to Namespace `storefront`
+*  Set Apply to `fw-zone=internet`
 *  Create an Egress rule 
-      Allow is Protocol is TCP
-      port 80 and 443 
+      Allow is Protocol is `TCP`
+      port `80` and `443` 
       egress domain t `*.tigera.io`
     
-* 
