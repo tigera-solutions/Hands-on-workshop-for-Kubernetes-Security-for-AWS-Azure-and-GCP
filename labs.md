@@ -52,14 +52,14 @@ kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 #### 4. Verify the impact of the pod
 
 #### 5. Create a quarantine rule
-* insert a new tier called `security` before the storefront tier
+* insert a new tier called `security` before the `storefront` tier
 * create a new policy called `quarantine`
 * set the scope to `global`
 * Set the Apply to `qurantine=true` (you need to create the key and value)
-* create  an ingress rule Action Log, Match All Endpoints
-* create  an ingress rule Action Deny, Match All Endpoints
-* create  an egress rule Action Log, Match All Endpoints
-* create  an egress rule Action Deny, Match All Endpoints
+* create  an ingress rule `Action Log, Match All Endpoints`
+* create  an ingress rule `Action Deny, Match All Endpoints`
+* create  an egress rule `Action Log, Match All Endpoints`
+* create  an egress rule `Action Deny, Match All Endpoints`
 
 #### 6. Apply the quarantine label
 ```
