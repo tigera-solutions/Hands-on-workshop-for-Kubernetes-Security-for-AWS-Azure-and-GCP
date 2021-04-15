@@ -1,0 +1,34 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalNetworkPolicy
+metadata:
+  name: security.quarantine
+spec:
+  tier: security
+  order: 0
+  selector: quarantine == "true"
+  namespaceSelector: ''
+  serviceAccountSelector: ''
+  ingress:
+    - action: Log
+      source:
+        selector: all()
+      destination: {}
+    - action: Deny
+      source:
+        selector: all()
+      destination: {}
+  egress:
+    - action: Log
+      source: {}
+      destination:
+        selector: all()
+    - action: Deny
+      source: {}
+      destination:
+        selector: all()
+  doNotTrack: false
+  applyOnForward: false
+  preDNAT: false
+  types:
+    - Ingress
+    - Egress

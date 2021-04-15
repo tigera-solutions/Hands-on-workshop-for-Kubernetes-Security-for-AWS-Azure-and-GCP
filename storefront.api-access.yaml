@@ -1,0 +1,22 @@
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: storefront.api-access
+  namespace: storefront
+spec:
+  tier: storefront
+  order: 15
+  selector: fw-zone == "internet"
+  serviceAccountSelector: ''
+  egress:
+    - action: Allow
+      protocol: TCP
+      source: {}
+      destination:
+        ports:
+          - '80'
+          - '443'
+        domains:
+          - '*.tigera.io'
+  types:
+    - Egress
