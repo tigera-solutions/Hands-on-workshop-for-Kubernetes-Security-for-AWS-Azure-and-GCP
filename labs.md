@@ -19,6 +19,8 @@ kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
  curl https://installer.calicocloud.io/xxxxxx_yyyyyyy-saay-management_install.sh | bash
 ```
+Once installing the calicocloud componants is successfull, you should be able to connect the mamagement console (see output or email) and login with the provided token.
+
 #### 2. Adjust timing (faster logs -- cool for demo, not for production)
 ```
 kubectl patch felixconfiguration.p default -p '{"spec":{"flowLogsFlushInterval":"10s"}}'
