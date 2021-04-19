@@ -6,7 +6,7 @@ sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 
 mkdir tigeraworkshop
 cd tigeraworkshop
-minikube start --network-plugin=cni --cni=calico --memory=4096
+minikube start --network-plugin=cni --cni=calico --memory=4096 --driver=hyperkit
 ```
 
 #### 2. Verify minikube and calico is working
