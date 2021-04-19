@@ -36,6 +36,8 @@ git clone https://github.com/tigera-solutions/Hands-on-workshop-for-Kubernetes-S
 cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ```
 ## 3. Dashboard quickstart
+Explore the calicocloud user interface. (https://docs.calicocloud.io/get-started/tour). 
+
 #### 1. Service graph
 ![alt text](https://docs.calicocloud.io/images/service-graph4.png)
 
