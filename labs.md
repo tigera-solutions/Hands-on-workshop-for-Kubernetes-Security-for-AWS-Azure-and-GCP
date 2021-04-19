@@ -19,7 +19,7 @@ kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
  curl https://installer.calicocloud.io/xxxxxx_yyyyyyy-saay-management_install.sh | bash
 ```
-Once installing the calicocloud componants is successfull, you should be able to connect the mamagement console (see output or email) and login with the provided token.
+Once installing the calicocloud components is successfull, you should be able to connect the mamagement console (see output or email) and login with the provided token.
 
 #### 2. Adjust timing (faster logs -- cool for demo, not for production)
 ```
@@ -36,7 +36,6 @@ git clone https://github.com/tigera-solutions/Hands-on-workshop-for-Kubernetes-S
 cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ```
 ## 3. Dashboard quickstart
-
 #### 1. Service graph
 ![alt text](https://docs.calicocloud.io/images/service-graph4.png)
 
