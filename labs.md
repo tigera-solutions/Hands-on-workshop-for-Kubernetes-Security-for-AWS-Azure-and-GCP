@@ -39,8 +39,13 @@ cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ![alt text](https://docs.calicocloud.io/images/service-graph4.png)
 
 #### 2. Policy Dashboard
+![alt text](https://docs.calicocloud.io/images/policy-filters.png)
+
 #### 3. Flow visualizer
+![alt text](https://docs.calicocloud.io/images/flow-viz.png)
+
 #### 4. Kibana logs
+![alt text](https://docs.calicocloud.io/images/kibana-logs.png)
 
 ## 4. Security polices 
 
