@@ -36,6 +36,8 @@ cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ## 3. Dashboard quickstart
 
 #### 1. Service graph
+![alt text](https://docs.calicocloud.io/images/service-graph4.png)
+
 #### 2. Policy Dashboard
 #### 3. Flow visualizer
 #### 4. Kibana logs
