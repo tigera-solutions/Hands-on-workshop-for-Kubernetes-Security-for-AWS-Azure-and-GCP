@@ -111,5 +111,9 @@ curl https://www.tigera.io
 ...
 curl https://docs.projectcalico.org
 ```
+## Interesting dashboard
+Go to the Kibana shortcut and explore the different dashboards.
+
+
 
  
