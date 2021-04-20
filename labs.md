@@ -93,4 +93,10 @@ kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
       * Allow is Protocol is `TCP`
       * port `80` and `443` 
       * egress domain `*.tigera.io`
+* Stage / Enforce the rule
+
+#### Create a pod to test the DNS policy
+```
+kubectl run -it --rm --image xxradar/hackon -n storefront -l fw-zone=internet -- bash
+
     
