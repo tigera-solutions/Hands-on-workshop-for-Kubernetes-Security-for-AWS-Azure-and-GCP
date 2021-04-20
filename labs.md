@@ -75,6 +75,8 @@ kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 * create  an ingress rule `Action Deny, Match All Endpoints`
 * create  an egress rule `Action Log, Match All Endpoints`
 * create  an egress rule `Action Deny, Match All Endpoints`
+* `stage` this rule and verify that it is not blocking any valid traffic (there should be no endpoints that are affected by this rule)
+* `enforce` the rule
 
 #### 6. Apply the quarantine label
 ```
