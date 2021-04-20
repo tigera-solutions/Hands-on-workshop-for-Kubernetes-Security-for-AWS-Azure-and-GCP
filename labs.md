@@ -105,11 +105,11 @@ dig www.tigera.io
 ...
 dig docs.projectcalico.org
 ```
-Verify the DNS egress rule
+Verify the DNS egress rule inside the pod
 ```
 curl https://www.tigera.io
 ...
 curl https://docs.projectcalico.org
 ```
 
-    
+ 
