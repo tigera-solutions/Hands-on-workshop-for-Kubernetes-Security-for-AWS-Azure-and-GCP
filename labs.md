@@ -112,7 +112,4 @@ curl https://www.tigera.io
 curl https://docs.projectcalico.org
 ```
 
-
-```
-
     
