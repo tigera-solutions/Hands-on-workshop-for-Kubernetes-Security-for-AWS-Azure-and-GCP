@@ -98,5 +98,21 @@ kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
 #### Create a pod to test the DNS policy
 ```
 kubectl run -it --rm --image xxradar/hackon -n storefront -l fw-zone=internet -- bash
+```
+Verify that the rule is applied to the pod. Inside the pod
+```
+dig www.tigera.io
+...
+dig docs.projectcalico.org
+```
+Verify the DNS egress rule
+```
+curl https://www.tigera.io
+...
+curl https://docs.projectcalico.org
+```
+
+
+```
 
     
