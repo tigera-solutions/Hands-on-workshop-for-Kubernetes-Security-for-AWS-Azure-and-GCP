@@ -24,6 +24,7 @@ Once installing the calicocloud components is successfull, you should be able to
 #### 2. Adjust timing (faster logs -- cool for demo, not for production)
 ```
 kubectl patch felixconfiguration.p default -p '{"spec":{"flowLogsFlushInterval":"10s"}}'
+kubectl patch felixconfiguration.p default -p '{"spec":{"dnsLogsFlushInterval":"10s"}}'
 kubectl patch felixconfiguration.p default -p '{"spec":{"flowLogsFileAggregationKindForAllowed":1}}'
 ```
 #### 3. Setup a demo application
