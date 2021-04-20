@@ -87,6 +87,8 @@ kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
 *  insert a new rule after `zone-kubernetes-dns` called `api-access`
 *  Set the scope to Namespace `storefront`
 *  Set Apply to `fw-zone=internet`
+*  uncheck the ingress checkbox
+*  check the egress checkbox
 *  Create an Egress rule 
       * Allow is Protocol is `TCP`
       * port `80` and `443` 
