@@ -17,6 +17,7 @@ kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
 ## 2. Connecting your cluster to Calico Cloud (Lab1)
 #### 1. Connect your cluster
+Please use the Service Connect Command - Install script provided in the welcome email and/or support.tigera.io portal.
 ```
  curl https://installer.calicocloud.io/xxxxxx_yyyyyyy-saay-management_install.sh | bash
 ```
