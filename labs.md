@@ -19,7 +19,7 @@ kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
  curl https://installer.calicocloud.io/xxxxxx_yyyyyyy-saay-management_install.sh | bash
 ```
-Once installing the calicocloud components is successfull, you should be able to connect the mamagement console (see output or email) and login with the provided token.
+Wait until installing the Calico Cloud components is finishing. It can take a few minutes.
 
 ## 3. Accessing your Calico Cloud envirnment and setting up a demo application (Lab2)
 #### 1. Adjust timing (faster logs -- cool for demo, not for production)
