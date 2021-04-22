@@ -53,9 +53,6 @@ Explore the calicocloud user interface. (https://docs.calicocloud.io/get-started
 #### 3. Flow visualizer
 ![alt text](https://docs.calicocloud.io/images/flow-viz.png)
 
-#### 4. Kibana logs
-![alt text](https://docs.calicocloud.io/images/kibana-logs.png)
-
 ## 5. Security polices 
 
 #### 1. Policy recommendation (LAB4)
@@ -118,7 +115,8 @@ curl https://docs.projectcalico.org
 ```
 ## Interesting dashboard (LAB9)
 Go to the Kibana shortcut and explore the different dashboards.
-
+#### 1.Kibana logs and dashboards
+![alt text](https://docs.calicocloud.io/images/kibana-logs.png)
 
 
  
