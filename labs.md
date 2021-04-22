@@ -14,19 +14,24 @@ minikube start --network-plugin=cni --cni=calico --memory=4096 --driver=hyperkit
 kubectl get no
 kubectl get pods -l k8s-app=calico-node -n kube-system
 ```
-## 2. Connecting your cluster to CalicoCloud
+## 2. Connecting your cluster to CalicoCloud (Lab1)
 #### 1. Connect your cluster
 ```
  curl https://installer.calicocloud.io/xxxxxx_yyyyyyy-saay-management_install.sh | bash
 ```
 Once installing the calicocloud components is successfull, you should be able to connect the mamagement console (see output or email) and login with the provided token.
 
-#### 2. Adjust timing (faster logs -- cool for demo, not for production)
+## 3. Accessing your Calico Cloud envirnment and setting up a demo application (Lab2)
+#### 1. Adjust timing (faster logs -- cool for demo, not for production)
 ```
 kubectl patch felixconfiguration.p default -p '{"spec":{"flowLogsFlushInterval":"10s"}}'
 kubectl patch felixconfiguration.p default -p '{"spec":{"dnsLogsFlushInterval":"10s"}}'
 kubectl patch felixconfiguration.p default -p '{"spec":{"flowLogsFileAggregationKindForAllowed":1}}'
 ```
+#### 2. Login into your Calico Cloud
+Connect to Calico Cloud using the Service Connect URL that has been assigned.
+Use the service account token to login.
+
 #### 3. Setup a demo application
 ```
 kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
@@ -36,7 +41,7 @@ kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 git clone https://github.com/tigera-solutions/Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP.git
 cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ```
-## 3. Dashboard quickstart
+## 4. Dashboard quickstart
 Explore the calicocloud user interface. (https://docs.calicocloud.io/get-started/tour). 
 
 #### 1. Service graph
@@ -51,7 +56,7 @@ Explore the calicocloud user interface. (https://docs.calicocloud.io/get-started
 #### 4. Kibana logs
 ![alt text](https://docs.calicocloud.io/images/kibana-logs.png)
 
-## 4. Security polices 
+## 5. Security polices 
 
 #### 1. Policy recommendation 
 Create a policy by using the Policy Recommendation option in CalicoCloud. From the Policy Dashboard, select the Policy Recommendation icon. Select the namespace `storefront` and pod `frontend-...` and click recommend. To verify the impact of the policy, click `stage`. Use the Service Graph or Flow visualizer to see the impact of the rule. When you are confident that this rule is correct, we can `enforce` the rule. 
