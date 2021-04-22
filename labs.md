@@ -99,7 +99,7 @@ kubectl label $(kubectl get po --selector app=attacker-app -o name) quarantine=t
 
 #### Create a pod to test the DNS policy
 ```
-kubectl run -it --rm --image xxradar/hackon -n storefront -l fw-zone=internet -- bash
+kubectl run -it --rm --image xxradar/hackon debug -n storefront -l fw-zone=internet -- bash
 ```
 Verify that the rule is applied to the pod. Inside the pod
 ```
