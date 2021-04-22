@@ -1,4 +1,4 @@
-# Hands-on workshop - Kubernetes Security and Observabilty
+# Hands-on workshop - Kubernetes Security and Observability
 ## 1. Getting a workshop environment (pre-workshop)
 #### 1. Setup minikube (example for Mac)
 ```
