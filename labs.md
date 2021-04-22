@@ -82,7 +82,7 @@ kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 
 #### 6. Apply the quarantine label
 ```
-kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
+kubectl label $(kubectl get po --selector app=attacker-app -o name) quarantine=true
 ```
 ## DNS policies (LAB8)
 #### Create a DNS policy to limit access to *.tigera.io
