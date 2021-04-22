@@ -58,20 +58,20 @@ Explore the calicocloud user interface. (https://docs.calicocloud.io/get-started
 
 ## 5. Security polices 
 
-#### 1. Policy recommendation 
+#### 1. Policy recommendation (LAB4)
 Create a policy by using the Policy Recommendation option in CalicoCloud. From the Policy Dashboard, select the Policy Recommendation icon. Select the namespace `storefront` and pod `frontend-...` and click recommend. To verify the impact of the policy, click `stage`. Use the Service Graph or Flow visualizer to see the impact of the rule. When you are confident that this rule is correct, we can `enforce` the rule. 
 
-#### 2. Apply a tiered network policy
+#### 2. Apply a tiered network policy (LAB5)
 ```
 kubectl apply -f ./networkpolicy/
 ```
-#### 3. Deploy a rogue pod
+#### 3. Deploy a rogue pod (LAB6)
 ```
 kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 ```
 #### 4. Verify the impact of the pod
 
-#### 5. Create a quarantine rule
+#### 5. Create a quarantine rule (LAB7)
 * insert a new tier called `security` before the `storefront` tier
 * create a new policy called `quarantine`
 * set the scope to `global`
@@ -87,7 +87,7 @@ kubectl apply -f https://installer.calicocloud.io/rogue-demo.yaml
 ```
 kubectl label po attacker-app-5f8d5574bf-tqnjf quarantine=true
 ```
-## DNS policies
+## DNS policies (LAB8)
 #### Create a DNS policy to limit access to *.tigera.io
 *  insert a new rule after `zone-kubernetes-dns` called `api-access`
 *  Set the scope to Namespace `storefront`
@@ -116,7 +116,7 @@ curl https://www.tigera.io
 ...
 curl https://docs.projectcalico.org
 ```
-## Interesting dashboard
+## Interesting dashboard (LAB9)
 Go to the Kibana shortcut and explore the different dashboards.
 
 
