@@ -41,7 +41,7 @@ kubectl apply -f https://installer.calicocloud.io/storefront-demo.yaml
 git clone https://github.com/tigera-solutions/Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP.git
 cd Hands-on-workshop-for-Kubernetes-Security-for-AWS-Azure-and-GCP
 ```
-## 4. Dashboard quickstart
+## 4. Dashboard quickstart (Lab3)
 Explore the calicocloud user interface. (https://docs.calicocloud.io/get-started/tour). 
 
 #### 1. Service graph
